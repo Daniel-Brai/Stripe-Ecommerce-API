@@ -5,7 +5,7 @@ dotenv.config({path: './.env'})
 // import stripe
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
 
-// 
+// Charge customer functionality
 const chargeCustomer = async ( req, res ) => { 
     const token = req.body.tokenId; 
 
